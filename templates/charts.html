@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}Charts{% endblock %}
+
+{% block content %}
+<h1>Charts</h1>
+<img src="data:image/png;base64,{{ plot_url }}" alt="Burn-Down and Burn-Up Charts">
+<img src="data:image/png;base64,{{ donut_chart_url }}" alt="User Stories Status Distribution">
+<img src="data:image/png;base64,{{ velocity_chart_url }}" alt="Sprint Velocity Chart">
+{% endblock %}
